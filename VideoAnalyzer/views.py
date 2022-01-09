@@ -105,7 +105,7 @@ def home(request):
         try:
             # Quick start code goes here
             # connect_str = os.getenv('AZURE_STORAGE_CONNECTION_STRING')
-            connect_str ='DefaultEndpointsProtocol=https;AccountName=frtstorageaccount;AccountKey=d4mQzT4ddE5fU8YhlIMkzW+jMT5+6ULewak/0E93cMCxiJcpeDPheVvA7tx/Ixgv2vpiAgen2F79yLgfpfJ2TQ==;EndpointSuffix=core.windows.net'
+            connect_str =env('CONNECTION_STR')
             # Create the BlobServiceClient object which will be used to create a container client
             blob_service_client = BlobServiceClient.from_connection_string(connect_str)
 
