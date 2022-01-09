@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-w-&6*+=wslt9k87v0$0fte*pxe88qua2to8z4gk$_^ytk=-$+q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['absolutevideoanalyzer.azurewebsites.net']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
