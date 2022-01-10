@@ -19,14 +19,15 @@
 
   <div class="container mt-5" id="content">
     <h6><i> Welcome! , Upload your pre-recorded Video/Presentation to deeply analyze the content present by Analyzing
-        your emotion, finding key-words and many more insights with the help of Absolute Video Analyzer. </i></h6>
+        your emotion, finding key-words and many more insights with the help of Absolute Video Analyzer. </i>(Supported file format : .flv,.mxf,.gxf,.mov,.wmv,.asf,.avi,.mp4,.m4a,.m4v,.isma,.ismv,.dvr-ms,.mkv,.wav)
+</h6>
     <!-- Content here -->
 
     <form method="post" enctype="multipart/form-data">
       {% csrf_token %}
       <div class="input-group mt-5 mx-auto" id='upload-block' style="width:50%">
         <input type="file" class="form-control" name="mediafile" id="mediafile" aria-describedby="inputGroupFileAddon04"
-          aria-label="Upload">
+          aria-label="Upload" accept=".flv,.mxf,.gxf,.mov,.wmv,.asf,.avi,.mp4,.m4a,.m4v,.isma,.ismv,.dvr-ms,.mkv,.wav" >
         <button class="btn btn-outline-secondary" type="submit" id="inputGroupFileAddon04">Button</button>
       </div>
     </form>
